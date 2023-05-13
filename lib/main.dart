@@ -51,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen> {
         fit: StackFit.expand,
         children: <Widget>[
           Container(
-            decoration: BoxDecoration(color: Colors.blueAccent),
+            decoration: BoxDecoration(color: Colors.blue[900]),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -66,26 +66,19 @@ class _SplashScreenState extends State<SplashScreen> {
                         backgroundColor: Colors.white,
                         radius: 50.0,
                         child: Icon(
-                          Icons.beach_access,
-                          color: Colors.greenAccent,
-                          size: 50.0,
+                          Icons.cyclone_rounded,
+                          color: Colors.black,
+                          size: 70.0,
                         ),
                       ),
                       Padding(
                         padding: EdgeInsets.only(top: 10.0),
                       ),
                       Text(
-                        "Gennews",
+                        "NEWS-TAK",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 24,
-                            fontWeight: FontWeight.bold),
-                      ),
-                      Text(
-                        "Developed by Md Arman",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 10,
                             fontWeight: FontWeight.bold),
                       ),
                     ],
@@ -104,13 +97,6 @@ class _SplashScreenState extends State<SplashScreen> {
                     Padding(
                       padding: EdgeInsets.only(top: 20.0),
                     ),
-                    Text(
-                      "Place to get Genuine News",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold),
-                    ),
                   ],
                 ),
               ),
@@ -121,4 +107,3 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 }
-

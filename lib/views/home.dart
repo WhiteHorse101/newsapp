@@ -38,18 +38,19 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.blue),
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "Gen",
+              "News",
               style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.w600,
                   fontStyle: FontStyle.italic),
             ),
             Text(
-              "news",
+              "Tak",
               style: TextStyle(color: Colors.blue, fontWeight: FontWeight.w600),
             ),
           ],
@@ -105,6 +106,19 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text('Drawer Header'),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
