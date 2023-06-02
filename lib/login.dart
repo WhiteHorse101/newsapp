@@ -39,7 +39,11 @@ class _LoginState extends State<Login> {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            _googleSignIn.signIn();
+            _googleSignIn.signIn().then((value) {
+              String username = value.displayName;
+              String profilepic = value.photoUrl;
+              print(username);
+            });
           },
           child: Text('Login'),
         ),

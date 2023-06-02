@@ -5,8 +5,10 @@ import 'package:gennews/helper/news.dart';
 import 'package:gennews/login.dart';
 import 'package:gennews/models/article_model.dart';
 import 'package:gennews/models/category_model.dart';
+import 'package:gennews/views/about_us.dart';
 import 'package:gennews/views/article_view.dart';
 import 'package:gennews/views/category_news.dart';
+import 'package:gennews/views/settings.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -128,22 +130,6 @@ class _HomeState extends State<Home> {
             ),
             ListTile(
               leading: Icon(
-                Icons.search_rounded,
-                color: Colors.black,
-              ),
-              title: const Text(
-                'Search',
-                style: TextStyle(fontFamily: 'Poppins', fontSize: 20),
-              ),
-              onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              leading: Icon(
                 Icons.login_outlined,
                 color: Colors.black,
               ),
@@ -163,10 +149,9 @@ class _HomeState extends State<Home> {
               title: const Text('Settings',
                   style: TextStyle(fontFamily: 'Poppins', fontSize: 20)),
               onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => Settings(),
+                ));
               },
             ),
             ListTile(
@@ -177,10 +162,9 @@ class _HomeState extends State<Home> {
               title: const Text('About Us',
                   style: TextStyle(fontFamily: 'Poppins', fontSize: 20)),
               onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => About_Us(),
+                ));
               },
             ),
             ListTile(
