@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:gennews/helper/data.dart';
 import 'package:gennews/helper/news.dart';
+import 'package:gennews/login.dart';
 import 'package:gennews/models/article_model.dart';
 import 'package:gennews/models/category_model.dart';
 import 'package:gennews/views/article_view.dart';
@@ -114,8 +115,89 @@ class _HomeState extends State<Home> {
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
-              child: Text('Drawer Header'),
-            )
+              child: Padding(
+                padding: EdgeInsets.only(top: 70),
+                child: Text(
+                  'News Tak',
+                  style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 45,
+                      fontStyle: FontStyle.italic),
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.search_rounded,
+                color: Colors.black,
+              ),
+              title: const Text(
+                'Search',
+                style: TextStyle(fontFamily: 'Poppins', fontSize: 20),
+              ),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.login_outlined,
+                color: Colors.black,
+              ),
+              title: const Text('Sign In',
+                  style: TextStyle(fontFamily: 'Poppins', fontSize: 20)),
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => Login(),
+                ));
+              },
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.settings,
+                color: Colors.black,
+              ),
+              title: const Text('Settings',
+                  style: TextStyle(fontFamily: 'Poppins', fontSize: 20)),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.help_center_outlined,
+                color: Colors.black,
+              ),
+              title: const Text('About Us',
+                  style: TextStyle(fontFamily: 'Poppins', fontSize: 20)),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.exit_to_app_outlined,
+                color: Colors.black,
+              ),
+              title: const Text('Sign Out',
+                  style: TextStyle(fontFamily: 'Poppins', fontSize: 20)),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
+            // ElevatedButton(),
           ],
         ),
       ),

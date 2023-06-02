@@ -7,15 +7,27 @@ void main() {
   runApp(MyApp());
 }
 
+// bool _iconBool = false;
+
+// ThemeData _lightTheme = ThemeData(
+//     brightness: Brightness.light
+
+// );
+
+// ThemeData _darkTheme = ThemeData(
+//     brightness: Brightness.dark
+
+// );
+
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Gennews',
+      title: 'News Tak',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.white,
+        primaryColor: Colors.blue,
       ),
       home: SplashScreen(),
     );
