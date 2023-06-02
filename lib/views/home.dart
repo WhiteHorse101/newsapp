@@ -141,19 +141,19 @@ class _HomeState extends State<Home> {
                 ));
               },
             ),
-            ListTile(
-              leading: Icon(
-                Icons.settings,
-                color: Colors.black,
-              ),
-              title: const Text('Settings',
-                  style: TextStyle(fontFamily: 'Poppins', fontSize: 20)),
-              onTap: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => Settings(),
-                ));
-              },
-            ),
+            // ListTile(
+            //   leading: Icon(
+            //     Icons.settings,
+            //     color: Colors.black,
+            //   ),
+            //   title: const Text('Settings',
+            //       style: TextStyle(fontFamily: 'Poppins', fontSize: 20)),
+            //   onTap: () {
+            //     Navigator.of(context).push(MaterialPageRoute(
+            //       builder: (context) => Settings(),
+            //     ));
+            //   },
+            // ),
             ListTile(
               leading: Icon(
                 Icons.help_center_outlined,
